@@ -15,11 +15,93 @@ header img {
   height: 100px;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
 .card {
-  background-color: aliceblue;
+  display: flex;
+  padding: 16px;
+  margin-bottom: 32px;
+  width: 400px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-title {
+  color: darkblue;
+}
+ 
+.card-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  border-radius: 7px;
+  box-shadow: 0px 20px 40px -14px rgba(0,0,0,0.25);
+  overflow: hidden;
+  transition: transform 0,5s;
+  -webkit-transition: transform 0,5s; 
+}
+
+.card-info {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 16px;
+  line-height: 25px;
+}
+
+.card-title {
+  font-size: 25px;
+  line-height: 20px;
+  color: #32325d;
+  margin-bottom: 4px;
+}
+
+.card-image {
+  background-image: url(https://th.bing.com/th/id/R.fced93d861072c83df923796e797387c?rik=RQQTC0BObCKu%2fg&riu=http%3a%2f%2fi.slimg.com%2fsc%2fsl%2fphoto%2ff%2ffo%2ffood-coffeeandcoffeebeans-dd.jpg&ehk=d3WNdg6Q8xrjnwbPLfOtvTsmTGRas1ZKp81pa7PKQqw%3d&risl=&pid=ImgRaw&r=0);
+  height: 200px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 6px 6px 0px 0px;
+  opacity: 0,80;
+  }
+
+.card-image {
+  background-size: auto;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-attachment: scroll;
+}
+
+.card-intro {
+  color: solid grey;
+}
+
+.rez-title{
+  display: flex;
   justify-content: center;
-  padding:5px 5px;
-  border-radius: 10px;
+}
+
+.rezerv {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button{
+  display: block;
+  margin: 16px auto;
+  padding: 16px 32px;
+  background-color: darkblue;
+  color: white;
 }
 
 li {
@@ -44,38 +126,121 @@ a {
   font-weight: 500;
 }
 
-h3 {
-  background-color: saddlebrown;
-  padding-bottom: 10px;
-  color: tomato;
+table, th, td {
+  border: 3px solid black;
 }
 
-p {
-  padding-bottom: 60px;
-  padding-left: 65px;
+section:hover table {
+  background-color: gold;
 }
 
-.btn {
-  display: block;
-  background-color: white;
-  border: 1px solid gray;
-  color: darkgray;
-  text-transform: uppercase;
-  width: 100px;
-  padding-left: 50px;
+.table-image {
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
 }
 
-.card-image {
-  width: 270px;
-  height: 220px;
-
-}
-.card-text h3 {
-  font-size: 28px;
-  margin-bottom: 8px;
+td:hover {
+  background-color: gold;
+  color: white;
 }
 
-.card-text p {
-  font-size: 15px;
-  margin-bottom: 6px;
+th:hover {
+  background-color: gold;
+  color: white;
 }
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  
+}
+
+.coofee-place {
+  text-align: center;
+  font-size: large;
+}
+
+.coofee-price {
+  text-align: center;
+  font-size: large;
+}
+
+.juice-place {
+  text-align: center;
+  font-size: large;
+}
+
+.juice-price {
+  text-align: center;
+  font-size: large;
+}
+
+.beer-place {
+  text-align: center;
+  font-size: large;
+}
+
+.beer-price {
+  text-align: center;
+  font-size: large;
+}
+
+.working-time {
+  font-size: large;
+}
+
+div.gallery {
+  display: inline-block;
+  margin: 5px;
+  border: 2px solid black;
+  width: 190px;
+}
+
+div.gallery:hover {
+  border: 2px solid blue;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.descr {
+  padding: 15px;
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: blue;
+} 
+
+.exx1:hover {
+  color: #5a5a5a;
+  transition: color 300ms;
+}
+
+.exx2:hover {
+  color:#5a5a5a;
+  transition: color 400ms;
+}
+
+.exx3:hover {
+  color:#5a5a5a;
+  transition: color 500ms;
+}
+
+.exx4:hover {
+  color:#5a5a5a;
+  transition: color 600ms;
+}
+
+.exx5:hover {
+  color: #5a5a5a;
+  transition: color 700ms;
+}
+
+.exx6:hover {
+  color:#5a5a5a;
+  transition: color 800ms;
+}
+

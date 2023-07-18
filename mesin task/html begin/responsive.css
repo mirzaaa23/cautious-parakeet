@@ -1,0 +1,42 @@
+
+
+@media (max-width: 992px) {
+  header nav {
+    display: none;
+  }
+
+  header .hamburger-menu {
+    display: block;
+  }
+}
+
+.hamburger-menu {
+  border: none;
+  padding: 0;
+  margin: 20px;
+  display: none;
+}
+
+span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  transition: all 0.2s ease-in-out;
+  background-color: black;
+  
+
+  &:nth-of-type(2) {
+    margin: 5px 0;
+  }
+}
+
+.hamburger-menu:hover span {
+  background-color: GOLD;
+}
+  /* @note: this is scss syntax of nesting elements */
+  /* visit this link to see more -> https://www.geeksforgeeks.org/what-is-the-difference-between-css-and-scss/*/
+/* .hamburger-menu {
+  span {
+    background-color: red;
+  }
+} */
